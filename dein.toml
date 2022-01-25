@@ -25,3 +25,6 @@ repo = 'tpope/vim-commentary'
 # ヘルプの日本語化
 repo = 'vim-jp/vimdoc-ja'
 
+[[plugins]]
+# yankする部分をハイライト
+repo = 'machakann/vim-highlightedyank'
