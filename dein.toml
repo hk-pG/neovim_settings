@@ -24,3 +24,8 @@ repo = 'tpope/vim-surround'
 
 [[plugins]]
 repo = 'tpope/vim-commentary'
+
+[[plugins]]
+# ヘルプの日本語化
+repo = 'vim-jp/vimdoc-ja'
+
