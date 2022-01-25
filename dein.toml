@@ -8,11 +8,7 @@ build_on = '''
 repo = 'junegunn/fzf.vim'
 
 [[plugins]]
-repo = 'neoclide/coc.nvim'
-
-[[plugins]]
 repo = 'markonm/traces.vim'
-
 
 [[plugins]]
 repo = 'tpope/vim-fugitive'
