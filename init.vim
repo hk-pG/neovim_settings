@@ -122,11 +122,7 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
 command! -nargs=* T split | wincmd j | resize 20 | terminal <args>
 
-inoremap {<Enter> {}<Left><CR><ESC><S-o>
-inoremap [<Enter> []<Left><CR><ESC><S-o>
-inoremap (<Enter> ()<Left><CR><ESC><S-o>
-
-" coc.nvim default setting
+" -------------- coc.nvim default setting -------------- "
 " if hidden is not set, TextEdit might fail.
 set hidden
 

@@ -34,3 +34,7 @@ on_i = 1
 merged = 0
 hook_source = 'call coil398#init#coc#hook_source()'
 
+
+[[plugins]]
+# 括弧の自動補完
+repo = 'jiangmiao/auto-pairs'
