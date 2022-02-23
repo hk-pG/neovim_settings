@@ -1,8 +1,5 @@
 [[plugins]]
 repo = 'junegunn/fzf'
-build_on = '''
-./install -all
-'''
 
 [[plugins]]
 repo = 'junegunn/fzf.vim'
@@ -28,3 +25,12 @@ repo = 'vim-jp/vimdoc-ja'
 [[plugins]]
 # yankする部分をハイライト
 repo = 'machakann/vim-highlightedyank'
+
+[[plugins]]
+# language server
+repo = 'neoclide/coc.nvim'
+rev = 'release'
+on_i = 1
+merged = 0
+hook_source = 'call coil398#init#coc#hook_source()'
+
