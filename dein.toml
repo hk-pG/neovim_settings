@@ -32,7 +32,7 @@ repo = 'neoclide/coc.nvim'
 rev = 'release'
 on_i = 1
 merged = 0
-hook_source = 'call coil398#init#coc#hook_source()'
+# hook_source = 'call coil398#init#coc#hook_source()'
 
 
 [[plugins]]
@@ -47,3 +47,22 @@ repo = 'vim-airline/vim-airline'
 # ステータスバーのプラグインのテーマ拡張
 repo = 'vim-airline/vim-airline-themes'
 
+[[plugins]]
+# カラースキーマのプラグイン
+repo = 'tomasr/molokai'
+
+[[plugins]]
+# カラースキーマのプラグイン
+repo = 'arcticicestudio/nord-vim'
+
+[[plugins]]
+# カラースキーマのプラグイン
+repo = 'ulwlu/elly.vim'
+
+[[plugins]]
+# カラースキーマのプラグイン
+repo = 'jdkanani/vim-material-theme'
+
+[[plugins]]
+# カラースキーマのプラグイン
+repo = 'jacoborus/tender.vim'
