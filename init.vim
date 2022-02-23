@@ -254,4 +254,21 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
+" ===================================================
 
+" バッファタブ有効化
+let g:airline#extensions#tabline#enabled = 1
+" テーマ設定
+" let g:airline_theme = 'deus'
+" let g:airline_theme = 'powerlineish'
+let g:airline_theme = 'luna'
+" 背景色
+let g:airline_deus_bg = 'dark'
+
+let g:airline_powerline_fonts = 1
+
+" gitブランチ表示
+let g:airline#extensions#branch#enabled = 1
+" タブ移動スクリプトを設定
+nmap <C-p> <Plug>AirlineSelectPrevTab
+nmap <C-n> <Plug>AirlineSelectNextTab
