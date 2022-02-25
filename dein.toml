@@ -1,16 +1,21 @@
 [[plugins]]
+# フィジー検索
 repo = 'junegunn/fzf'
 
 [[plugins]]
+# 正規表現をプレビュー
 repo = 'markonm/traces.vim'
 
 [[plugins]]
+# Git操作
 repo = 'lambdalisue/gina.vim'
 
 [[plugins]]
+# 括弧やクォーテーションへの操作を拡張
 repo = 'machakann/vim-sandwich'
 
 [[plugins]]
+# コメントアウトプラグイン
 repo = 'tpope/vim-commentary'
 
 [[plugins]]
@@ -29,10 +34,15 @@ on_i = 1
 merged = 0
 # hook_source = 'call coil398#init#coc#hook_source()'
 
-
 [[plugins]]
 # 括弧の自動補完
 repo = 'jiangmiao/auto-pairs'
+
+[[plugins]]
+# Gitの情報をコードの横に表示
+repo = 'airblade/vim-gitgutter'
+
+################# 見た目系のプラグイン #################
 
 [[plugins]]
 # ステータスバーのプラグイン
@@ -42,22 +52,18 @@ repo = 'vim-airline/vim-airline'
 # ステータスバーのプラグインのテーマ拡張
 repo = 'vim-airline/vim-airline-themes'
 
+# ------------ カラースキーマのプラグイン ------------ #
 [[plugins]]
-# カラースキーマのプラグイン
 repo = 'tomasr/molokai'
 
 [[plugins]]
-# カラースキーマのプラグイン
 repo = 'arcticicestudio/nord-vim'
 
 [[plugins]]
-# カラースキーマのプラグイン
 repo = 'ulwlu/elly.vim'
 
 [[plugins]]
-# カラースキーマのプラグイン
 repo = 'jdkanani/vim-material-theme'
 
 [[plugins]]
-# カラースキーマのプラグイン
 repo = 'jacoborus/tender.vim'
