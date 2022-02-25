@@ -67,4 +67,7 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 " インサートモードでバックスペース有効化
 set backspace=2
 
-command! -nargs=* T split | wincmd j | resize 20 | terminal <args>
+" command! -nargs=* T split | wincmd j | resize 20 | terminal <args>
+" :Tで右半分をターミナルにする
+command! -nargs=* T vsplit | wincmd l | terminal
+
