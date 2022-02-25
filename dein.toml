@@ -2,9 +2,6 @@
 repo = 'junegunn/fzf'
 
 [[plugins]]
-repo = 'junegunn/fzf.vim'
-
-[[plugins]]
 repo = 'markonm/traces.vim'
 
 [[plugins]]
