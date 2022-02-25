@@ -275,4 +275,7 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 :tnoremap <Esc> <C-\><C-n>
 " autocmd TermOpen * startinsert
 
+" インサートモードでバックスペース有効化
+set backspace=2
+
 command! -nargs=* T split | wincmd j | resize 20 | terminal <args>
