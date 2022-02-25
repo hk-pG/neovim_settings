@@ -5,7 +5,7 @@ repo = 'junegunn/fzf'
 repo = 'markonm/traces.vim'
 
 [[plugins]]
-repo = 'tpope/vim-fugitive'
+repo = 'lambdalisue/gina.vim'
 
 
 [[plugins]]
