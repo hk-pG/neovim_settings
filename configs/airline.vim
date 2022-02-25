@@ -15,6 +15,6 @@ let g:airline#extensions#branch#enabled = 1
 let g:airline#extensions#tabline#buffer_idx_mode = 1
 
 " タブ移動スクリプトを設定
-nmap <C-p> <Plug>AirlineSelectPrevTab
-nmap <C-n> <Plug>AirlineSelectNextTab
+nmap <C-k> <Plug>AirlineSelectPrevTab
+nmap <C-j> <Plug>AirlineSelectNextTab
 
