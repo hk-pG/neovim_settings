@@ -1,3 +1,19 @@
+" global plugin
+let g:coc_global_extensions = [
+  \'coc-clangd',
+  \'coc-css',
+  \'coc-eslint',
+  \'coc-explorer',
+  \'coc-json',
+  \'coc-prettier',
+  \'coc-tabnine',
+  \'coc-toml',
+  \'coc-tsserver',
+  \'coc-yaml',
+  \'coc-tabnine-data',
+  \'coc-taml-data'
+\]
+
 " if hidden is not set, TextEdit might fail.
 set hidden
 
