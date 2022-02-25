@@ -7,10 +7,8 @@ repo = 'markonm/traces.vim'
 [[plugins]]
 repo = 'lambdalisue/gina.vim'
 
-
 [[plugins]]
-repo = 'tpope/vim-surround'
-
+repo = 'machakann/vim-sandwich'
 
 [[plugins]]
 repo = 'tpope/vim-commentary'
