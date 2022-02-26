@@ -132,7 +132,7 @@ nnoremap <silent> <space>w :<C-u>CocCommand cSpell.addWordToDictionary<CR>
 " buffer delete
 nnoremap <silent> <space>d :<C-u>bdelete<CR>
 " FZF file finder open
-nnoremap <silent> :f :<C-u>FZF<CR>
+nnoremap <silent> <space>f :<C-u>FZF<CR>
 " ↑ここまで!!!
 
 " Find symbol of current document
