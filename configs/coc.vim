@@ -9,7 +9,9 @@ let g:coc_global_extensions = [
   \'coc-tabnine',
   \'coc-toml',
   \'coc-tsserver',
-  \'coc-yaml'
+  \'coc-yaml',
+  \'coc-git',
+  \'coc-snippets',
 \]
 
 " if hidden is not set, TextEdit might fail.
