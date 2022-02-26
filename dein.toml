@@ -28,7 +28,7 @@ repo = 'neoclide/coc.nvim'
 rev = 'release'
 on_i = 1
 merged = 0
-hook_source = 'call coil398#init#coc#hook_source()'
+# hook_source = 'call coil398#init#coc#hook_source()'
 
 [[plugins]]
 # 括弧の自動補完
@@ -41,6 +41,14 @@ repo = 'airblade/vim-gitgutter'
 [[plugins]]
 # スニッペットプラグイン
 repo = 'honza/vim-snippets'
+
+[[plugins]]
+# シンタックスハイライトを拡張
+repo = 'nvim-treesitter/nvim-treesitter'
+
+# ((((((((((((((( 言語に関するプラグイン )))))))))))))))
+[[plugins]]
+repo = 'cespare/vim-toml'
 
 ################# 見た目系のプラグイン #################
 
@@ -67,3 +75,6 @@ repo = 'jdkanani/vim-material-theme'
 
 [[plugins]]
 repo = 'jacoborus/tender.vim'
+
+[[plugins]]
+repo = 'sainnhe/gruvbox-material'
