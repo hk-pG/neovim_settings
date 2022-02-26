@@ -28,7 +28,7 @@ repo = 'neoclide/coc.nvim'
 rev = 'release'
 on_i = 1
 merged = 0
-# hook_source = 'call coil398#init#coc#hook_source()'
+hook_source = 'call coil398#init#coc#hook_source()'
 
 [[plugins]]
 # 括弧の自動補完
@@ -37,6 +37,10 @@ repo = 'jiangmiao/auto-pairs'
 [[plugins]]
 # Gitの情報をコードの横に表示
 repo = 'airblade/vim-gitgutter'
+
+[[plugins]]
+# スニッペットプラグイン
+repo = 'honza/vim-snippets'
 
 ################# 見た目系のプラグイン #################
 
