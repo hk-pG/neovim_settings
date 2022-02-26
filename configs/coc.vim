@@ -112,7 +112,7 @@ command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 " use `:OR` for organize import of current buffer
 command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
 
-" Using CocList
+" ↓これすごく重要!消さないで!!!
 " Show all diagnostics
 nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
 " Open coc-explorer
@@ -121,21 +121,24 @@ nnoremap <silent> <space>e <Cmd>CocCommand explorer<CR>
 nnoremap <silent> <space>s  :<C-u>CocList -I symbols<cr>
 " Show commands
 nnoremap <silent> <space>c  :<C-u>CocList commands<cr>
-" Find symbol of current document
-nnoremap <silent> <space>o  :<C-u>CocList outline<cr>
 " Do default action for next item.
 nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 " Do default action for previous item.
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
-" Resume latest coc list
-nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 " Manage extensions
 nnoremap <silent> <space>x  :<C-u>CocList extensions<cr>
 " add new word to Dictionary
 nnoremap <silent> <space>w :<C-u>CocCommand cSpell.addWordToDictionary<CR>
 " buffer delete
 nnoremap <silent> <space>d :<C-u>bdelete<CR>
+" FZF file finder open
+nnoremap <silent> :f :<C-u>FZF<CR>
+" ↑ここまで!!!
 
+" Find symbol of current document
+nnoremap <silent> <space>o  :<C-u>CocList outline<cr>
+" Resume latest coc list
+" nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 " Create mappings for function text object, requires document symbols feature of
 "languageserver.
 function! s:show_documentation()
