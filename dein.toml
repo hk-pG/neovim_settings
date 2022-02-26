@@ -1,6 +1,9 @@
 [[plugins]]
-# フィジー検索
+# ファジー検索
 repo = 'junegunn/fzf'
+[[plugins]]
+# ファジー検索
+repo = 'junegunn/fzf.vim'
 
 [[plugins]]
 # 正規表現をプレビュー
@@ -31,8 +34,16 @@ merged = 0
 # hook_source = 'call coil398#init#coc#hook_source()'
 
 [[plugins]]
+# CocListを強化
+repo = 'neoclide/coc-lists'
+
+[[plugins]]
 # 括弧の自動補完
 repo = 'jiangmiao/auto-pairs'
+
+[[plugins]]
+# vimからgitの操作を可能にする
+repo = 'lambdalisue/gina.vim'
 
 [[plugins]]
 # Gitの情報をコードの横に表示
