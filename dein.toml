@@ -7,10 +7,6 @@ repo = 'junegunn/fzf'
 repo = 'markonm/traces.vim'
 
 [[plugins]]
-# Git操作
-repo = 'lambdalisue/gina.vim'
-
-[[plugins]]
 # 括弧やクォーテーションへの操作を拡張
 repo = 'machakann/vim-sandwich'
 
