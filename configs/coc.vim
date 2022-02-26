@@ -133,6 +133,8 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 nnoremap <silent> <space>x  :<C-u>CocList extensions<cr>
 " add new word to Dictionary
 nnoremap <silent> <space>w :<C-u>CocCommand cSpell.addWordToDictionary<CR>
+" buffer delete
+nnoremap <silent> <space>d :<C-u>bdelete<CR>
 
 " Create mappings for function text object, requires document symbols feature of
 "languageserver.
