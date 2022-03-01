@@ -15,6 +15,36 @@ let g:coc_global_extensions = [
   \'coc-spell-checker',
 \]
 
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+" Use `:Format` to format current buffer
+command! -nargs=0 Format :call CocAction('format')
+
+" Use `:Fold` to fold current buffer
+command! -nargs=? Fold :call     CocAction('fold', <f-args>)
+
+" use `:OR` for organize import of current buffer
+command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
+
+augroup mygroup
+  autocmd!
+  " Setup formatexpr specified filetype(s).
+  autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
+  " Update signature help on jump placeholder
+  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+augroup end
+
 " if hidden is not set, TextEdit might fail.
 set hidden
 
@@ -77,14 +107,6 @@ nmap <leader>rn <Plug>(coc-rename)
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 
-augroup mygroup
-  autocmd!
-  " Setup formatexpr specified filetype(s).
-  autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
-  " Update signature help on jump placeholder
-  autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
-augroup end
-
 " Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
 xmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>a  <Plug>(coc-codeaction-selected)
@@ -102,15 +124,6 @@ omap af <Plug>(coc-funcobj-a)
 " Use <C-d> for select selections ranges, needs server support, like: coc-tsserver, coc-python
 nmap <silent> <C-d> <Plug>(coc-range-select)
 xmap <silent> <C-d> <Plug>(coc-range-select)
-
-" Use `:Format` to format current buffer
-command! -nargs=0 Format :call CocAction('format')
-
-" Use `:Fold` to fold current buffer
-command! -nargs=? Fold :call     CocAction('fold', <f-args>)
-
-" use `:OR` for organize import of current buffer
-command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
 
 " ↓これすごく重要!消さないで!!!
 " Show all diagnostics
@@ -133,7 +146,9 @@ nnoremap <silent> <space>w :<C-u>CocCommand cSpell.addWordToDictionary<CR>
 nnoremap <silent> <space>d :<C-u>bdelete<CR>
 " FZF file finder open
 nnoremap <silent> <space>f :<C-u>FZF<CR>
-" ↑ここまで!!!
+" Hover action call
+nmap <silent> <space>h :<C-u>call CocAction('doHover')<cr>
+"" ↑ここまで!!!
 
 " Find symbol of current document
 nnoremap <silent> <space>o  :<C-u>CocList outline<cr>
@@ -141,16 +156,4 @@ nnoremap <silent> <space>o  :<C-u>CocList outline<cr>
 " nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 " Create mappings for function text object, requires document symbols feature of
 "languageserver.
-function! s:show_documentation()
-  if (index(['vim','help'], &filetype) >= 0)
-    execute 'h '.expand('<cword>')
-  else
-    call CocAction('doHover')
-  endif
-endfunction
-
-function! s:check_back_space() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
 
