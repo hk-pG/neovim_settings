@@ -1,9 +1,19 @@
 [[plugins]]
 # ファジー検索
 repo = 'junegunn/fzf'
+build = './install --bin'
+merged = 0
+
 [[plugins]]
 # ファジー検索
 repo = 'junegunn/fzf.vim'
+depends = 'fzf'
+hook_add = '''
+  command! -bang -nargs=* Rg
+    \ call fzf#vim#grep(
+    \   'rg --line-number --no-heading '.shellescape(<q-args>), 0,
+    \   fzf#vim#with_preview({'options': '--exact --reverse'}, 'right:50%:wrap'))
+'''
 
 [[plugins]]
 # 正規表現をプレビュー
@@ -31,7 +41,8 @@ repo = 'neoclide/coc.nvim'
 rev = 'release'
 on_i = 1
 merged = 0
-# hook_source = 'call coil398#init#coc#hook_source()'
+build = './install.sh nightly'
+hook_add = 'source ~/.config/nvim/coc-settings.json'
 
 [[plugins]]
 # CocListを強化
@@ -56,6 +67,14 @@ repo = 'honza/vim-snippets'
 [[plugins]]
 # シンタックスハイライトを拡張
 repo = 'nvim-treesitter/nvim-treesitter'
+
+[[plugins]]
+# ターミナルの切り替えをスムーズにする
+repo = 'caenrique/nvim-toggle-terminal'
+
+[[plugins]]
+# コーディングの記録をつける
+repo = 'wakatime/vim-wakatime'
 
 # ((((((((((((((( 言語に関するプラグイン )))))))))))))))
 [[plugins]]
