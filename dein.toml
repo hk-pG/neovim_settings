@@ -54,7 +54,11 @@ repo = 'jiangmiao/auto-pairs'
 
 [[plugins]]
 # vimからgitの操作を可能にする
-repo = 'lambdalisue/gina.vim'
+repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+# vimからlazygitの操作を可能にする
+repo = 'kdheepak/lazygit.nvim'
 
 [[plugins]]
 # Gitの情報をコードの横に表示
@@ -79,6 +83,9 @@ repo = 'wakatime/vim-wakatime'
 # ((((((((((((((( 言語に関するプラグイン )))))))))))))))
 [[plugins]]
 repo = 'cespare/vim-toml'
+
+[[plugins]]
+repo = 'vim-scripts/DoxygenToolkit.vim'
 
 ################# 見た目系のプラグイン #################
 
