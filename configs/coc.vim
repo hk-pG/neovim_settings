@@ -13,6 +13,8 @@ let g:coc_global_extensions = [
   \'coc-git',
   \'coc-snippets',
   \'coc-spell-checker',
+  \'coc-html',
+  \'coc-css',
 \]
 
 function! s:show_documentation()
