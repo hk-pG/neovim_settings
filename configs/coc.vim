@@ -15,6 +15,7 @@ let g:coc_global_extensions = [
   \'coc-spell-checker',
   \'coc-html',
   \'coc-css',
+  \'coc-actions',
 \]
 
 function! s:show_documentation()
@@ -150,6 +151,8 @@ nnoremap <silent> <space>d :<C-u>bdelete<CR>
 nnoremap <silent> <space>f :<C-u>FZF<CR>
 " Hover action call
 nmap <silent> <space>h :<C-u>call CocAction('doHover')<cr>
+" CocAction (quickfix)
+nnoremap <silent> <space>i :<C-u>CocAction <CR>
 "" ↑ここまで!!!
 
 " Find symbol of current document
