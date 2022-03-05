@@ -1,7 +1,7 @@
 {
   "suggest.noselect": true,
   "suggest.preferCompleteThanJumpPlaceholder": true,
-  "coc.preferences.formatOnSaveFiletypes": ["cpp", "c"],
+  "coc.preferences.formatOnSaveFiletypes": ["cpp", "c", "javascript", "typescript"],
   "languageserver": {
     "dockerfile": {
       "command": "docker-langserver",
