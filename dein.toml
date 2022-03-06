@@ -74,7 +74,8 @@ repo = 'nvim-treesitter/nvim-treesitter'
 
 [[plugins]]
 # ターミナルの切り替えをスムーズにする
-repo = 'caenrique/nvim-toggle-terminal'
+# repo = 'caenrique/nvim-toggle-terminal'
+repo = 'akinsho/toggleterm.nvim'
 
 [[plugins]]
 # コーディングの記録をつける
