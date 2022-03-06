@@ -16,6 +16,7 @@ let g:coc_global_extensions = [
   \'coc-html',
   \'coc-css',
   \'coc-actions',
+  \'coc-lua',
 \]
 
 function! s:show_documentation()
