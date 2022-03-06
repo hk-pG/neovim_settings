@@ -17,6 +17,9 @@ let g:coc_global_extensions = [
   \'coc-css',
   \'coc-actions',
   \'coc-lua',
+  \'coc-python',
+  \'coc-java',
+  \'coc-phpls',
 \]
 
 function! s:show_documentation()
