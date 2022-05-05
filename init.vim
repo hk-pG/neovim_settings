@@ -9,4 +9,3 @@ for file in split
   execute 'source' file
 endfor
 
-colorscheme tender
