@@ -116,3 +116,5 @@ for file in split
   echo "設定ファイルを読み込んでいます : " . file
   execute 'source' file
 endfor
+
+echo "プラグインが機能していない場合は:PlugInstallを実行してみて下さい"
