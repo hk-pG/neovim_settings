@@ -71,6 +71,11 @@ set backspace=2
 " :Tで右半分をターミナルにする
 command! -nargs=* T vsplit | wincmd l | terminal
 
+" unlimit undo 
+if has("persistent_undo")
+  set undodir=~/.vimUndoDir
+  set undofile
+endif
 
 " start plugin setting ====================================================================================================================================
 call plug#begin('~/.config/nvim/plugged')
