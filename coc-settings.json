@@ -1,7 +1,17 @@
 {
   "suggest.noselect": true,
   "suggest.preferCompleteThanJumpPlaceholder": true,
-  "coc.preferences.formatOnSaveFiletypes": ["cpp", "c", "javascript", "typescript"],
+  "explorer.width": 30,
+  "explorer.file.showHiddenFiles": true,
+  "explorer.icon.enableNerdfont": true,
+
+  "coc.preferences.formatOnSaveFiletypes": [
+    "cpp",
+    "c",
+    "javascript",
+    "typescript"
+  ],
+
   "languageserver": {
     "dockerfile": {
       "command": "docker-langserver",

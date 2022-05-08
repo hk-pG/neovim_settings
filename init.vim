@@ -115,8 +115,12 @@ Plug 'jacoborus/tender.vim'
 Plug 'sainnhe/gruvbox-material'
 Plug 'jonathanfilip/vim-lucius'
 Plug 'w0ng/vim-hybrid'
+Plug 'tomasiser/vim-code-dark'
 "
 " colorscheme plugins
+
+" icon plugin
+
 
 call plug#end()
 
