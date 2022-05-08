@@ -104,12 +104,19 @@ Plug 'cespare/vim-toml'
 Plug 'vim-scripts/DoxygenToolkit.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+
+" colorscheme plugins
+"
 Plug 'tomasr/molokai'
 Plug 'arcticicestudio/nord-vim'
 Plug 'ulwlu/elly.vim'
 Plug 'jdkanani/vim-material-theme'
 Plug 'jacoborus/tender.vim'
 Plug 'sainnhe/gruvbox-material'
+Plug 'jonathanfilip/vim-lucius'
+Plug 'w0ng/vim-hybrid'
+"
+" colorscheme plugins
 
 call plug#end()
 
