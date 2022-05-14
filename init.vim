@@ -104,6 +104,9 @@ Plug 'cespare/vim-toml'
 Plug 'vim-scripts/DoxygenToolkit.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'mattn/emmet-vim'
+
+let g:user_emmet_install_global = 1
 
 " colorscheme plugins
 "
