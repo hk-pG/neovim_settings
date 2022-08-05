@@ -105,6 +105,7 @@ Plug 'vim-scripts/DoxygenToolkit.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'mattn/emmet-vim'
+Plug 'dart-lang/dart-vim-plugin'
 
 let g:user_emmet_install_global = 1
 

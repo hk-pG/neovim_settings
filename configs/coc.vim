@@ -20,6 +20,7 @@ let g:coc_global_extensions = [
   \'coc-python',
   \'coc-java',
   \'coc-phpls',
+  \'coc-flutter',
 \]
 
 function! s:show_documentation()
