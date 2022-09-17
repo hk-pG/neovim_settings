@@ -138,7 +138,7 @@ for file in split
 endfor
 
 echo "プラグインが機能していない場合は:PlugInstallを実行してみて下さい"
-echo "vim-plugがインストールていない場合は↓を実行して下さい"
-echo "sh -c 'curl -fLo \"${XDG_DATA_HOME:-$HOME/.local/share}\"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'"
+echo "vim-plugがインストールていない場合は↓を参照して下さい"
+echo "https://github.com/junegunn/vim-plug"
 echo "coc.nvimが機能していない場合は':call coc#util#install()'を実行して下さい"
 
