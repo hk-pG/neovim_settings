@@ -17,8 +17,14 @@ set showcmd
 set number
 " 現在の行を強調表示
 set cursorline
+" 行のハイライトの色
+" highlight CursorLine ctermfg=Blue
+" highlight CursorLine ctermbg=Blue
 " 現在の行を強調表示（縦）
 set cursorcolumn
+" 列のハイライトの色
+highlight CursorColumn ctermbg=Blue
+highlight CursorColumn ctermfg=Yellow
 " 行末の1文字先までカーソルを移動できるように
 set virtualedit=onemore
 " インデントはスマートインデント
@@ -106,6 +112,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'mattn/emmet-vim'
 Plug 'dart-lang/dart-vim-plugin'
+Plug 'nvim-treesitter/nvim-treesitter'
 
 let g:user_emmet_install_global = 1
 
@@ -120,8 +127,7 @@ Plug 'sainnhe/gruvbox-material'
 Plug 'jonathanfilip/vim-lucius'
 Plug 'w0ng/vim-hybrid'
 Plug 'tomasiser/vim-code-dark'
-"
-" colorscheme plugins
+Plug 'EdenEast/nightfox.nvim'
 
 " icon plugin
 
