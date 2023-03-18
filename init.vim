@@ -1,3 +1,5 @@
+let mapleader = "\<Space>"
+
 " setting
 "文字コードをUFT-8に設定
 set fenc=utf-8
@@ -66,4 +68,35 @@ set hlsearch
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
 colorscheme koehler
+
+" vim-easymotion {{{
+
+" Jump to anywhere you want with minimal keystrokes, with just one key binding.
+" `s{char}{label}`
+nmap m <Plug>(easymotion-overwin-f)
+" or
+" `s{char}{char}{label}`
+" Need one more keystroke, but on average, it may be more comfortable.
+nmap m <Plug>(easymotion-overwin-f2)
+
+" Turn on case-insensitive feature
+let g:EasyMotion_smartcase = 1
+
+" JK motions: Line motions
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+
+" }}}
+
+call plug#begin()
+
+Plug 'brglng/vim-im-select'
+
+if exists('g:vscode')
+  Plug 'asvetliakov/vim-easymotion'
+else
+  Plug 'easymotion/vim-easymotion'
+endif
+
+call plug#end()
 
